@@ -19,3 +19,8 @@ if(obj1keys.length == obj2keys.length){
 if(obj2keys.length<=0){
     console.log("same keys")
 }
+else {
+    console.log("different keys")
+}
+
+// Output: same keys
