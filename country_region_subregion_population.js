@@ -20,10 +20,6 @@ xhr.onload = function(){
             let c_flag = data[i].flag;
             let c_sub = data[i].subregion;
             let c_pop = data[i].population;
-            
-            var result = [c_name,c_flag, c_sub, c_pop];
-
-            // result_store(result);
 
             country_information[c_name]= {"flag" : c_flag,
                                 "sub_region":c_sub,
@@ -48,16 +44,4 @@ xhr.onload = function(){
     population: 14240168
   }
   */ 
-
-
-// function result_store(result){
-//     let name = result[0];
-//     let flag = result[1];
-//     let sub = result[2];
-//     let pop = result[3];
-
-//     country_information[name]= {"flag" : flag,
-//                                 "sub_region":sub,
-//                                 "population":pop};
-// }
 
