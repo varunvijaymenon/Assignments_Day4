@@ -1,24 +1,3 @@
-// const request = require('request')
-   
-// // Request URL
-// var url = 'https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json';
-  
-// request.get(url, (error, response, body)=>{
-     
-//     // Printing the error if occurred
-//     if(error) console.log(error)
-    
-//     // Printing status code
-//     console.log(response.statusCode);
-      
-//     // Printing body
-//     console.log(body);
-// }); 
-
-// console.log(response)
-
-
-
 var XMLHttpRequest = require('xhr2');
 
 let url = 'https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json'
@@ -42,7 +21,6 @@ xhr.onload = function(){
             let cflag = data[i].flag;
             
             var result = [cname,cflag];
-            // country_flag[cname] = cflag;
 
             result_store(result);
         }
